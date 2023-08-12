@@ -6,16 +6,13 @@
 
 - Minimal
 - TypeScript v4
-- Testing with Jest
 - Linting with Eslint and Prettier
 - Pre-commit hooks with Husky
 - VS Code debugger scripts
-- Local development with Nodemon
+- Local development with ts-node-dev
 
 ### Scripts
 
-#### `yarn run start:dev`
+Starts the application in development using `ts-node-dev` to do hot reloading.
 
-Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
-
-#### `yarn run dev`
+#### `yarn dev`
