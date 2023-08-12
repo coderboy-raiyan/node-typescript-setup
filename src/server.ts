@@ -12,7 +12,7 @@ async function bootstrap() {
     await mongoose.connect(config.db_uri as string)
     console.log('DB connected successfully')
     server.listen(PORT, () => {
-      console.log('Hello to ' + PORT + ' ...')
+      console.log('listening to ' + PORT + ' ...')
     })
   } catch (error) {
     console.log(error)
