@@ -1,22 +1,22 @@
-import http from "http";
-import mongoose from "mongoose";
-import app from "./app/app";
-import config from "./config";
+import http from 'http'
+import mongoose from 'mongoose'
+import app from './app/app'
+import config from './config'
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000
 
-const server = http.createServer(app);
+const server = http.createServer(app)
 
 async function bootstrap() {
   try {
-    await mongoose.connect(config.db_uri as string);
-    console.log("DB connected successfully");
+    await mongoose.connect(config.db_uri as string)
+    console.log('DB connected successfully')
     server.listen(PORT, () => {
-      console.log("Listening to " + PORT + " ...");
-    });
+      console.log('Listening to ' + PORT + ' ...')
+    })
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
 }
 
-bootstrap();
+bootstrap()
