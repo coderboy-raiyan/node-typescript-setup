@@ -5,7 +5,7 @@
 
 ### Linting Setup
 - You can modify these settings as you need to. Check out the full list of supported compiler options, and you can play around in the TypeScript playground:
-```json
+```js
 // tsconfig.json
 {
   "compilerOptions": {
