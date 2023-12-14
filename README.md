@@ -34,7 +34,7 @@ yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev
 
 ---
 - When we add an ESLint rule, it overrides the configuration defined in the extends list. Let’s add a couple of rules to see how it works:
-```json
+```js
 // .eslintrc
 {
   "parser": "@typescript-eslint/parser",
@@ -72,7 +72,7 @@ dist
 
 - This often matches with your .gitignore file content, so to have a single source of truth, you can update the lint script to use the --ignore-path flag:
 
-```json
+```js
 // package.json
 {
   // ...
@@ -96,7 +96,7 @@ yarn add prettier --dev
 ---
 
 - you will need to create a file called .prettierrc.json in the project’s root directory, where you can define your format options :
-``` json
+``` js
 // .prettierrc.json
 {
   "semi": false, // Specify if you want to print semicolons at the end of statements
@@ -114,7 +114,7 @@ prettier --write .
 ---
 
 - Let’s add the Prettier command to our scripts, just as we did for TypeScript and ESLint :
-```json
+```js
 {
   "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
 }
@@ -129,7 +129,7 @@ yarn add eslint-config-prettier --dev
 
 
 - With that installed, let’s go to the .eslintrc file, and add prettier at the end of your extends list to disable any other previous rules from other plugins:
-```json
+```js
 // .eslintrc
 {
   "parser": "@typescript-eslint/parser",
