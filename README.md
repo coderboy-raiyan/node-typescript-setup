@@ -1,4 +1,4 @@
-# 🧰 Simple TypeScript Starter | 2023
+# 🧰 Simple Production Level TypeScript and Node js Setup | 2023
 
 > We talk about a lot of **advanced Node.js and TypeScript**, particularly focused around Domain-Driven Design and large-scale enterprise application patterns. However, I received a few emails from readers that were interested in seeing what a basic TypeScript starter project looks like. So I've put together just that.
 
@@ -162,6 +162,29 @@ yarn add eslint-config-prettier --dev
     "source.organizeImports": "explicit"
   }
 }
+```
+---
+
+- Add Husky to automatically check your lint :
+```js
+yarn add husky --dev
+yarn husky install
+yarn husky add .husky/pre-commit "yarn lint-staged"
+```
+---
+
+
+- Add Lint Stage for staged files :
+```js
+yarn add lint-staged --dev
+```
+---
+
+- Add this to your package.json :
+```js
+ "lint-staged": {
+    "src/**/*.ts": "yarn lint-prettier"
+  },
 ```
 ---
 
