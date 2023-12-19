@@ -154,8 +154,19 @@ yarn add eslint-config-prettier --dev
 ```
 ---
 
+- Add these settings to your workspace settings :
+```js
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}
+```
+---
+
 ### Conclusion
- Using TypeScript and ESLint together can boost our confidence in our code. It helps us prevent bugs and can save us time in the long run. I recommend you try using TypeScript and ESLint for an enhanced development experience, benefitting both you and your team in your upcoming projects.
+ Using TypeScript and ESLint together can boost our confidence in our code. It helps us prevent bugs and can save us time in the long run. Try using TypeScript and ESLint for an enhanced development experience, benefitting your and your team in your upcoming projects.
 
 ### Features
 
@@ -174,10 +185,10 @@ Starts the application in development using `ts-node-dev` to do hot reloading.
 
 ###
 
-If you want to use it just do these steps
+If you want to use it do these steps
 
 - First clone the repo.
-- now you need to add your github origin by using this command
+- now you need to add your GitHub origin by using this command
   `git remote set-url origin https://git-repo/new-repository.git`
-- then push it to your github
+- then push it to your GitHub
 - And now you are ready to use it 🚀👍
